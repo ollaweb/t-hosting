@@ -9,9 +9,14 @@
         justify-content: center;
         width: 28px;
         height: 28px;
+        &_email {
+            align-self: flex-start;
+        }
         &::before {
             content: "";
             position: absolute;
+            top: 0;
+            left: 0;
             width: 28px;
             height: 28px;
             background-color: $white;

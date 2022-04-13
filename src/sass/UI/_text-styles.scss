@@ -1,0 +1,66 @@
+.header-1{
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    color: $gray;
+}
+.header-2{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: $gray;
+}
+
+.header-3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $gray;
+}
+
+.main-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $gray;
+    @media (min-width: 992px) {
+        font-size: 20px;
+    }
+    &_semibold {
+        font-weight: 600;
+    }
+}
+
+.mini-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray;
+}
+
+.link {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    color: $gray;
+}
+.button-text {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.035em;
+    color: $white;
+    &_small {
+        font-size: 18px;
+        @media (min-width: 992px) {
+            font-size: 20px;
+        }
+    }
+}

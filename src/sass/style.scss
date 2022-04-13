@@ -1,8 +1,10 @@
-@import "./base//fonts";
-@import "./base/variables";
+@import "./UI//fonts";
+@import "./base/layout";
+@import "./UI/variables";
 @import "./base/start";
 @import "./base/container";
 
+@import "./UI/_text-styles";
 @import "./UI/contact";
 @import "./UI/button";
 

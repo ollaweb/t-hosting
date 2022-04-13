@@ -18,13 +18,13 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container container">
-                <div class="header__wrapper">
-                    <div class="header__logo image-bg">
+                <div class="header__wrapper row">
+                    <div class="header__logo image-bg col-3 col-lg-3 col-xl-4">
                         <a href="#">
                             <img src="./img/header/logo.svg" alt="WS Hosting логотип">
                         </a>
                     </div>
-                    <ul class="header__contacts">
+                    <ul class="header__contacts col-4 col-xl-2">
                         <li class="header__phone contact">
                             <div class="contact__icon">
                                 <img src="./img/header/phone.svg" alt="телефон">
@@ -34,7 +34,7 @@
                             </div>
                         </li>
                         <li class="header__phone contact">
-                            <div class="contact__icon">
+                            <div class="contact__icon contact__icon_email">
                                 <img src="./img/header/email.svg" alt="электронная почта">
                             </div>
                             <div class="contact__contact">
@@ -43,14 +43,40 @@
                             </div>
                         </li>
                     </ul>
-                    <button class="header__button button">
-                        Купить хостинг
-                    </button>
-                    <button class="header__login">
-                        <img src="./img/header/login.svg" alt="личный кабинет">
-                    </button>
+                    <div class="header__buttons col-5 col-xl-6">
+                        <button class="header__button button button-text button-text_small">
+                            Купить хостинг
+                        </button>
+                        <button class="header__login">
+                            <img src="./img/header/login.svg" alt="личный кабинет">
+                        </button>
+                    </div>
                 </div>
             </div>
+
+            <nav class="header__nav">
+                <div class="header__container container">
+                    <ul class="header__menu">
+                        <li class="header__link main-text">
+                            <a href="#">хостинг</a>
+                        </li>
+                        <li class="header__link main-text">
+                            <a href="#">vps</a>
+                        </li>
+                        <li class="header__link main-text">
+                            <a href="#">регистрация доменов</a>
+                        </li>
+                        <li class="header__link main-text">
+                            <a href="#">ssl</a>
+                        </li>
+                        <li class="header__link main-text">
+                            <a href="#" class="dropdown">хостинг-провайдер
+                                <img src="./img/header/arrow-down.svg" alt="стрелка вниз выпадающего меню">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <main class="main">
 

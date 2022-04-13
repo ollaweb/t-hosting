@@ -1,27 +1,75 @@
 .header {
-    padding: 11px 0 12px;
     background-color: $text;
     &__wrapper {
-        display: flex;
+        padding: 11px 0 12px;
         align-items: center;
     }
     &__logo {
-        margin-left: 10px;
-        margin-right: 247px;
-        width: 143px;
-        height: 88px;
+        
+        & img {
+            margin-left: 10px;
+            width: 143px;
+            height: 88px;
+        }
     }
     &__contacts {
-        margin-right: 289px;
         &>:not(:last-child) {
             margin-bottom: 15px;
         }
     }
     &__login {
-        margin-left: 36px;
         width: 44px;
         height: 44px;
         border-radius: 100%;
         background-color: $blue;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        &>:not(:last-child) {
+            margin-right: 36px;
+        }
+    }
+    & nav {
+        padding: 16px 0px 18px;
+        background-color:$white;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        &>:not(:last-child) {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 2px;
+                right: -33px;
+                width: 1px;
+                height: 20px;
+                opacity: 0.2;
+                background-color: $text;
+                @media (min-width: 992px) {
+                    top: 5px;
+                    right: -45px;
+                }
+                @media (min-width: 1200px) {
+                    right: -65px;
+                }
+            }
+        }
+    }
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    & img {
+        margin-left: 4px;
+        width: 16px;
+        height: 16px;
+        @media (min-width: 992px) {
+            width: 20px;
+            height: 20px;
+        }
     }
 }
