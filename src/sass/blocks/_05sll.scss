@@ -1,0 +1,101 @@
+.sll {
+    padding: 94px 0;
+    &__about {
+        margin-top: 36px;
+        width: 100%;
+        max-width: 730px;
+        @media (min-width: 1200px) {
+            margin-top: 57px;
+        }
+        &>:not(:last-child) {
+            margin-bottom: 23px;
+        }
+    }
+    &__cards {
+        margin-top: 49px;
+    }
+    &__card {
+        position: relative;
+        list-style-type: none;
+        counter-increment: list;
+        &::before {
+            content: counter(list);
+            position: absolute;
+            top: -9px;
+            left: 23px;
+            font-weight: 600;
+            font-size: 72px;
+            line-height: 150%;
+            text-align: center;
+            color: $blue;
+            opacity: 0.5;
+        }
+        &:nth-child(1) {
+            & .sll-card__header {
+                margin-top: 15px;
+                max-width: 191px;
+            }
+        }
+        &:nth-child(2) {
+            & .sll-card__header {
+                max-width: 180px;
+            }
+        }
+       
+    }
+}
+
+.sll-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 41px 0 30px;
+    background: rgba(103, 168, 210, 0.1);
+    border: 1px solid rgba(103, 168, 210, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(183, 183, 183, 0.43);
+    border-radius: 10px;
+    &__header {
+        position: relative;
+        margin: 0 auto;
+        height: 161px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+        color: $blue-dark;
+        &::after {
+            content: ""; 
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 180px;
+            height: 0.5px;
+            background-color: $blue-dark;
+        }
+    }
+    &__text {
+        flex: 1 0 auto;
+        margin-top: 75px;
+        text-align: center;
+        &>:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+    &__price {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $blue-dark;
+        text-align: center;
+        & span {
+            margin-right: 11px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 150%;
+            text-align: center;
+            color: $blue-dark;
+        }
+    }
+}
