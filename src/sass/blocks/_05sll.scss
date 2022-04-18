@@ -100,6 +100,7 @@
 .sll-card {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100%;
     padding: 41px 0 30px;
     background: rgba(103, 168, 210, 0.1);
@@ -119,7 +120,6 @@
     }
     &__header {
         position: relative;
-        margin: 0 auto;
         height: 120px;
         font-weight: 600;
         font-size: 20px; 
