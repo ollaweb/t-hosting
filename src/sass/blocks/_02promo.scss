@@ -89,7 +89,6 @@
         }
     }
     &__price {
-        margin-right: 68px;
         position: relative;
         width: 210px;
         font-weight: 400;
@@ -98,6 +97,7 @@
         color: $white;
         z-index: 5;
         @media (min-width: 576px) {
+            margin-right: 68px;
             align-self:center;
         }
         @media (min-width: 768px) {
@@ -110,13 +110,14 @@
         &::before {
             content: "";
             position: absolute;
-            top: -6px;
+            top: -3px;
             right: 0;
             width: 100vw;
             height: 34px;
             background-color: $blue-dark;
             z-index: -1;
             @media (min-width: 576px) {
+                top: -6px;
                 height: 40px;
             }
             @media (min-width: 768px) {

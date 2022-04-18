@@ -1,0 +1,185 @@
+.names-hosting {
+    position: relative;
+    background: linear-gradient(180deg, rgba(124, 180, 216, 0.4) 0%, rgba(191, 230, 255, 0) 100%);
+    &:before {
+        content: url("../../img/names/bg.svg");
+        position: absolute;
+        top: -18px;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.names {
+    padding: 52px 0 104px;
+    @media (min-width: 992px) {
+        padding: 52px 0 149px;
+    }
+    &__wrapper {
+        flex-direction: column-reverse;
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+    }
+    &__text {
+        margin-top: 48px;
+        width: 100%;
+        @media (min-width: 992px) {
+            margin-top: 155px;
+            max-width: 560px;
+        }
+        & p {
+            &:not(:last-child) {
+                margin-bottom: 23px;
+            }
+        }
+        
+    }
+    &__button {
+        margin-top: 45px; 
+        @media (min-width: 992px) {
+            margin-top: 77px; 
+        }
+        & button {
+            padding: 7px 22px;
+        }
+    }
+    &__blocks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media (min-width: 576px) {
+            flex-direction: row;
+        }
+    }
+    &__block {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+        @media (min-width: 576px) {
+            margin-top: 45px;
+            width: 49%;
+        }
+        @media (min-width: 768px) {
+            margin-top: 58px;
+        }
+        @media (min-width: 992px) {
+            width: 225px;
+        }
+        @media (min-width: 1200px) {
+            width: 280px;
+        }
+        &_right {
+            margin-top: 21px;
+            @media (min-width: 576px) {
+                margin-top: 66px;
+            }
+            @media (min-width: 768px) {
+                margin-top: 79px;
+            }
+        }
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 21px;
+        }
+    }
+} 
+
+.names-item {
+    padding: 15px 10px 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $white;
+    box-shadow: 0px 4px 4px rgba(183, 183, 183, 0.43);
+    border-radius: 5px;
+    @media (min-width: 500px) {
+        flex-direction: row;
+    }
+    @media (min-width: 768px) {
+        padding: 18px 19px 16px 39px;
+    }
+    @media (min-width: 992px) {
+        padding: 15px 10px 15px 30px;
+    }
+    @media (min-width: 1200px) {
+        padding: 18px 19px 16px 39px;
+    }
+    &__domen {
+        margin-top: 10px;
+        position: relative;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $blue-dark;
+        z-index: 2;
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+        @media (min-width: 992px) {
+            font-size: 20px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 24px;
+        }
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -19px;
+            width: 55px;
+            height: 55px;
+            border-radius: 100%;
+            background: linear-gradient(90deg, #7CB4D8 0%, rgba(191, 230, 255, 0) 100%);
+            z-index: -1;
+        }
+    }
+    &__price {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @media (min-width: 500px) {
+            margin-top: 0;
+            align-items: center;
+        }
+    }
+    &__value {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $gray;
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+        @media (min-width: 992px) {
+            font-size: 20px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 24px;
+        }
+    }
+    &__year {
+        margin-top: -10px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: $gray;
+        @media (min-width: 768px) {
+            font-size: 20px;
+        }
+        @media (min-width: 992px) {
+            font-size: 18px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 20px;
+        }
+    }
+}
