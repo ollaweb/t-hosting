@@ -1,0 +1,43 @@
+.hosting {
+    padding: 28px 0;
+    @media (min-width: 992px) {
+        padding: 96px 0 28px;
+    }
+    &__wrapper {
+        margin-top: 35px;
+        align-items: center;
+        @media (min-width: 768px) {
+            margin-top: 57px;
+        }
+        @media (min-width: 992px) {
+            align-items:unset;
+        }
+    }
+    &__image {
+        margin: 0 auto;
+        max-width: 441px;
+        @media (min-width: 768px) {
+            margin: 0;
+        }
+    }
+    &__content {
+        margin-top: 30px;
+        max-width: 640px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $gray;
+        @media (min-width: 768px) {
+            margin: 0;
+        }
+        @media (min-width: 992px) {
+            font-size: 20px;
+        }
+        @media (min-width: 1200px) {
+            margin-top: 33px;
+        }
+        &>:not(:last-child) {
+            margin-bottom: 23px; 
+        }
+    }
+}
