@@ -41,3 +41,100 @@
         }
     }
 }
+
+.vps {
+    padding: 50px 0 124px;
+    @media (min-width: 992px) {
+        padding: 86px 0 124px;
+    }
+    &__subtitle {
+        margin-top: 20px;
+        @media (min-width: 992px) {
+            margin-top: 43px;
+        }
+    }
+    &__items {
+        margin-top: 23px;
+    }
+    &__table {
+        margin-top: 30px;
+        @media (min-width: 992px) {
+            margin: 0;
+        }
+    }
+}
+
+.vps-table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    empty-cells: show;
+    text-align: center;
+    background-color: $white;
+    
+    & tbody {
+        & tr {
+            &:nth-child(odd) {
+                background-color: rgba(103,168,210,0.2);
+                & td {
+                    &:first-child {
+                        background-color: $blue-dark;
+                    }
+                }
+            }
+            &:nth-child(even) {
+                background-color: $white;
+                & td {
+                    &:first-child {
+                        background-color: rgba(27,86,124,0.8);
+                    }
+                }
+            }
+            & td {
+                &:not(:first-child) {
+                    border-right: 0.5px solid $blue;
+                }
+                &:last-child {
+                    border:none;
+                }
+            }
+        }
+    }
+    & td, th {
+        width: 25%;
+        padding: 11px 5px;
+        vertical-align: top;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        color: $gray;
+        @media (min-width: 576px) {
+            font-size: 16px;
+        }
+        @media (min-width: 768px) {
+            font-size: 20px;
+        }
+        &:first-child {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 150%;
+            color: $white;
+            @media (min-width: 576px) {
+                font-size: 16px;
+            }
+            @media (min-width: 768px) {
+                font-size: 20px;
+            }
+        }
+    }
+    
+    & button {
+        margin-top: 17px;
+        padding: 7px 5px;
+        font-size: 12px;
+        @media (min-width: 576px) {
+            padding: 7px 10px;
+            font-size: 18px;
+        }
+    }
+}
