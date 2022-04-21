@@ -1,0 +1,58 @@
+.try {
+    position: relative;
+    &__block {
+        padding: 26px 11px;
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 86.44%;
+        max-width: 1020px;
+        background-color: $blue-dark;
+        box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.27);
+        border-radius: 10px;
+        @media (min-width: 510px) {
+            padding: 45px 30px 32px;
+        }
+        @media (min-width: 768px) {
+            padding: 64px 55px 40px;
+        }
+    }
+    &__text {
+        & p {
+            font-size: 16px;
+            text-align: center;
+            color: $white;
+            @media (min-width: 510px) {
+                font-size: 18px;
+            }
+            @media (min-width: 576px) {
+                font-size: 20px;
+            }
+            @media (min-width: 992px) {
+                font-size: 24px;
+            }
+            &:not(:last-of-type) {
+                margin-bottom: 18px;
+            }
+            &:last-of-type {
+                margin: 0 auto;
+                @media (min-width: 1200px) {
+                    width: 76.17647%;
+                }
+            }
+            & span {
+                font-weight: 700;
+                color: $orange;
+            }
+        }
+        
+    }
+    &__button {
+        margin-top: 36px;
+        text-align: center;
+        & button {
+            padding: 7px 55px;
+        }
+    }
+}
