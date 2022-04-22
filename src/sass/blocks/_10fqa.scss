@@ -61,7 +61,7 @@
                     transform: rotate(90deg);
                 }
                 &::after {
-                    display: none;
+                    transform: rotate(0deg);
                     opacity: 0;
                     background-color: transparent;
                 }
