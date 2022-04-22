@@ -1,10 +1,16 @@
 .payment {
-    padding: 293px 0 118px;
+    padding: 310px 0 118px;
     background: linear-gradient(180deg, rgba(124, 180, 216, 0.4) 0%, rgba(191, 230, 255, 0) 100%);
+    @media (min-width: 400px) {
+        padding: 293px 0 118px;
+    }
     &__text {
-        margin-top: 54px;
+        margin-top: 32px;
         width: 100%;
         max-width: 700px;
+        @media (min-width: 768px) {
+            margin-top: 54px;
+        }
     }
     &__items {
         margin-top: 20px;
@@ -97,15 +103,6 @@
                 @media (min-width: 992px) {
                     display: block;
                 }
-            }
-        }
-        &:nth-child(7),
-        &:nth-child(8) {
-            @media (min-width: 768px) {
-                flex: 0 1 50%;
-            }
-            @media (min-width: 992px) {
-                flex: 0 1 25%;
             }
         }
         & img {

@@ -1,6 +1,9 @@
 .fqa {
     position: relative;
-    padding: 50px 0 244px;
+    padding: 50px 0 200px;
+    @media (min-width: 768px) {
+        padding: 50px 0 244px;
+    }
     &:before {
         content: url("../../img/fqa/bg.svg");
         position: absolute;
