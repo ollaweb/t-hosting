@@ -78,6 +78,11 @@
             margin-top: 66px;
         }
     }
+    &__card {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .tariff-block {
