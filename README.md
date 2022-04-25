@@ -4,7 +4,7 @@
 12 April 2022 - 25 April 2022 (about 45 hours)
 
 ### Review
-![Look at this lovely design]("./src/img/t-hosting.jpg")
+![Look at this lovely design](https://github.com/ollaweb/t-hosting/blob/main/src/img/t-hosting.jpg)
 ### Description
 About **CSS**:
 * no Bootstrap;
