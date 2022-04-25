@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="WS Hosting - платный хостинг для сайта">
+    <meta name="description"
+        content="Совместим с любыми CMS: 1С-Битрикс, Wordpress, Opencart, DLE, Joomla и др. Всё включено: PHP 5.4-8.0, Perl, FTP, MySQL,ISPManager">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <title>WS Hosting</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id="header">
+            <div class="header-overlay"></div>
+            <div class="header__block">
+                <div class="header__container container">
+                    <div class="header__wrapper row">
+                        <div class="header__logo image-bg col-3 col-xl-4">
+                            <a href="#" data-scroll="#header">
+                                <img src="./img/header/logo.svg" alt="WS Hosting логотип">
+                            </a>
+                        </div>
+                        <div class="header__mobile col-md-9 col-xl-8">
+                            <ul class="header__contacts">
+                                <li class="header__phone contact">
+                                    <div class="contact__icon">
+                                        <img src="./img/header/phone.svg" alt="телефон">
+                                    </div>
+                                    <div class="contact__contact">
+                                        <a href="tel:+7(495)123-45-56">+7 (495) 123-45-56</a>
+                                    </div>
+                                </li>
+                                <li class="header__phone contact">
+                                    <div class="contact__icon contact__icon_email">
+                                        <img src="./img/header/email.svg" alt="электронная почта">
+                                    </div>
+                                    <div class="contact__contact">
+                                        <a href="mailto:support@wshost.ru">support@wshost.ru</a>
+                                        <p class="contact__contact_footnote">(поддержка 24/7)</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="header__buttons">
+                                <button class="header__button button button_blue button-text button-text_small">
+                                    Купить хостинг
+                                </button>
+                                <button class="header__login">
+                                    <img src="./img/header/login.svg" alt="личный кабинет">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <nav class="header__nav">
+                <div class="header__container container">
+                    <ul class="header__menu">
+                        <li class="header__link main-text">
+                            <a href="#" data-scroll="#tariff">хостинг</a>
+                        </li>
+                        <li class="header__link main-text">
+                            <a href="#" data-scroll="#hosting">vps</a>
+                        </li>
+                        <li class="header__link main-text">
+                            <a href="#" data-scroll="#names">регистрация доменов</a>
+                        </li>
+                        <li class="header__link main-text">
+                            <a href="#" data-scroll="#sll">ssl</a>
+                        </li>
+                        <li class="header__link main-text" id="dropdown">
+                            <div class="dropdown">
+                                <button class="dropdown__button">хостинг-провайдер</button>
+                            </div>
+                            <ul class="dropdown__wrapper">
+                                <li class="dropdown__item">
+                                    <a href="#">Пункт №1</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#">Пункт №2</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header__burger burger">
+                <div class="burger__wrapper">
+                    <div class="burger__items">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="promo" id="promo">
+                <div class="promo__container container">
+                    <div class="promo__image">
+                        <img src="./img/promo/seververs.svg" alt="серверы">
+                    </div>
+                    <div class="promo__content">
+                        <h1 class="promo__title">Платный хостинг <br> для сайта</h1>
+                        <div class="promo__text">
+                            <p class="main-text">Совместим с любыми CMS:<br><span>1С-Битрикс, Wordpress, Opencart,
+                                    DLE, Joomla и др.</span></p>
+                            <p class="main-text">Всё включено:<br><span>PHP 5.4 – 8.0, Perl, FTP, MySQL, ISPManager
+                                </span></p>
+                        </div>
+                        <div class="promo__buttons">
+                            <div class="promo__price">
+                                Всего от <span>99 ₽ в месяц!</span>
+                            </div>
+                            <button class="promo__button button button-text button-text_small">
+                                Заказать хостинг
+                            </button>
+                            <div class="promo__arrow">
+                                <img src="./img/promo/arrow.svg"
+                                    alt="стрелочка, указывающая на кнопку Заказать хостинг">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tariff" id="tariff">
+                <div class="tariff__container container">
+                    <h2 class="tariff__title header-2">Тарифы на хостинг</h2>
+                    <div class="tariff__about main-text">
+                        <p>У нас оптимальные тарифы на классический виртуальный хостинг с безлимитными ресурсами на
+                            количество сайтов, баз данных и FTP. </p>
+                        <p>Выбирайте наш лучший <span class="main-text_semibold">безлимитный</span> хостинг в России!
+                        </p>
+                    </div>
+                    <ul class="tariff__names row hide">
+                        <li class="tariff__block col-sm-6 col-lg-3">
+                            <div class="tariff-block">
+                                <div class="tariff-block__image">
+                                    <img src="./img/tariff/baloon.svg" alt="воздушный шар">
+                                </div>
+                                <div class="tariff-block__name header-3">мини</div>
+                            </div>
+                        </li>
+                        <li class="tariff__block col-sm-6 col-lg-3">
+                            <div class="tariff-block">
+                                <div class="tariff-block__image tariff-block__image_start">
+                                    <img src="./img/tariff/paper-airplane.svg" alt="бумажный самолётик">
+                                </div>
+                                <div class="tariff-block__name header-3">старт</div>
+                            </div>
+                        </li>
+                        <li class="tariff__block col-sm-6 col-lg-3 hide-m">
+                            <div class="tariff-block">
+                                <div class="tariff-block__image tariff-block__image_standart">
+                                    <img src="./img/tariff/helicopter.svg" alt="вертолет">
+                                </div>
+                                <div class="tariff-block__name header-3">стандарт</div>
+                            </div>
+                        </li>
+                        <li class="tariff__block col-sm-6 col-lg-3 hide-m">
+                            <div class="tariff-block">
+                                <div class="tariff-block__image tariff-block__image_business">
+                                    <img src="./img/tariff/rocket.svg" alt="космическая ракета">
+                                </div>
+                                <div class="tariff-block__name header-3">бизнес</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tariff__infinity main-text hide-block">
+                        Неограниченно сайтов, баз данных MySQL, FTP аккаунтов и почтовых ящиков
+                    </div>
+                    <ul class="tariff__characteristics row hide">
+                        <li class="tariff__description col-sm-6 col-lg-3">
+                            <div class="tariff-description">
+                                <div class="tariff-description__top">
+                                    <p class="tariff-description__space main-text main-text_semibold">2Gb места SSD </p>
+                                    <div class="tariff-description__text mini-text">
+                                        <p>PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4</p>
+                                        <p>Поддержка любой CMS</p>
+                                        <p>Бесплатные SSL сертификаты Let's Encrypt</p>
+                                        <p>Защита от DDoS</p>
+                                    </div>
+                                </div>
+                                <div class="tariff-description__bottom">
+                                    <div class="tariff-description__price">
+                                        <div class="tariff-description__new-price">
+                                            <div></div>
+                                            <p class="header-3">99 ₽</p>
+                                            <p>в месяц</p>
+                                        </div>
+                                        <div class="tariff-description__old-price">
+                                            <p>117 ₽</p>
+                                            <p>в месяц</p>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="tariff-description__button button button_blue button-text button-text_small">Купить
+                                        хостинг</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tariff__description col-sm-6 col-lg-3">
+                            <div class="tariff-description">
+                                <div class="tariff-description__top">
+                                    <p class="tariff-description__space main-text main-text_semibold">7Gb места SSD </p>
+                                    <div class="tariff-description__text mini-text">
+                                        <p>PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4</p>
+                                        <p>Поддержка любой CMS</p>
+                                        <p>Бесплатные SSL сертификаты Let's Encrypt</p>
+                                        <p>Защита от DDoS</p>
+                                        <p>Повышенная производительность</p>
+                                        <p>Домен в подарок</p>
+                                    </div>
+                                </div>
+                                <div class="tariff-description__bottom">
+                                    <div class="tariff-description__price">
+                                        <div class="tariff-description__new-price">
+                                            <div></div>
+                                            <p class="header-3">149 ₽</p>
+                                            <p>в месяц</p>
+                                        </div>
+                                        <div class="tariff-description__old-price">
+                                            <p>117 ₽</p>
+                                            <p>в месяц</p>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="tariff-description__button button button_blue button-text button-text_small">Купить
+                                        хостинг</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tariff__description col-sm-6 col-lg-3 hide-m">
+                            <div class="tariff-description">
+                                <div class="tariff-description__top">
+                                    <p class="tariff-description__space main-text main-text_semibold">30Gb места SSD
+                                    </p>
+                                    <div class="tariff-description__text mini-text">
+                                        <p>PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4</p>
+                                        <p>Поддержка любой CMS</p>
+                                        <p>Бесплатные SSL сертификаты Let's Encrypt</p>
+                                        <p>Защита от DDoS</p>
+                                        <p>Повышенная производительность</p>
+                                        <p>Домен в подарок</p>
+                                    </div>
+                                </div>
+                                <div class="tariff-description__bottom">
+                                    <div class="tariff-description__price">
+                                        <div class="tariff-description__new-price">
+                                            <div></div>
+                                            <p class="header-3">290 ₽</p>
+                                            <p>в месяц</p>
+                                        </div>
+                                        <div class="tariff-description__old-price">
+                                            <p>117 ₽</p>
+                                            <p>в месяц</p>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="tariff-description__button button button_blue button-text button-text_small">Купить
+                                        хостинг</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tariff__description col-sm-6 col-lg-3 hide-m">
+                            <div class="tariff-description">
+                                <div class="tariff-description__top">
+                                    <p class="tariff-description__space main-text main-text_semibold">50Gb места SSDgit
+                                    </p>
+                                    <div class="tariff-description__text mini-text">
+                                        <p>PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4</p>
+                                        <p>Поддержка любой CMS</p>
+                                        <p>Бесплатные SSL сертификаты Let's Encrypt</p>
+                                        <p>Защита от DDoS</p>
+                                        <p>Повышенная производительность</p>
+                                        <p>Домен в подарок</p>
+                                    </div>
+                                </div>
+                                <div class="tariff-description__bottom">
+                                    <div class="tariff-description__price">
+                                        <div class="tariff-description__new-price">
+                                            <div></div>
+                                            <p class="header-3">470 ₽</p>
+                                            <p>в месяц</p>
+                                        </div>
+                                        <div class="tariff-description__old-price">
+                                            <p>117 ₽</p>
+                                            <p>в месяц</p>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="tariff-description__button button button_blue button-text button-text_small">Купить
+                                        хостинг</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="tariff__names row hide">
+                        <li class="tariff__block col-sm-6 col-lg-3 hide-w">
+                            <div class="tariff-block">
+                                <div class="tariff-block__image tariff-block__image_standart">
+                                    <img src="./img/tariff/helicopter.svg" alt="вертолет">
+                                </div>
+                                <div class="tariff-block__name header-3">стандарт</div>
+                            </div>
+                        </li>
+                        <li class="tariff__block col-sm-6 col-lg-3 hide-w">
+                            <div class="tariff-block">
+                                <div class="tariff-block__image tariff-block__image_business">
+                                    <img src="./img/tariff/rocket.svg" alt="космическая ракета">
+                                </div>
+                                <div class="tariff-block__name header-3">бизнес</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tariff__infinity main-text hide-w-m">
+                        Неограниченно сайтов, баз данных MySQL, FTP аккаунтов и почтовых ящиков
+                    </div>
+                    <ul class="tariff__characteristics row hide">
+                        <li class="tariff__description col-sm-6 col-lg-3 hide-w">
+                            <div class="tariff-description">
+                                <div class="tariff-description__top">
+                                    <p class="tariff-description__space main-text main-text_semibold">30Gb места SSD
+                                    </p>
+                                    <div class="tariff-description__text mini-text">
+                                        <p>PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4</p>
+                                        <p>Поддержка любой CMS</p>
+                                        <p>Бесплатные SSL сертификаты Let's Encrypt</p>
+                                        <p>Защита от DDoS</p>
+                                        <p>Повышенная производительность</p>
+                                        <p>Домен в подарок</p>
+                                    </div>
+                                </div>
+                                <div class="tariff-description__bottom">
+                                    <div class="tariff-description__price">
+                                        <div class="tariff-description__new-price">
+                                            <div></div>
+                                            <p class="header-3">290 ₽</p>
+                                            <p>в месяц</p>
+                                        </div>
+                                        <div class="tariff-description__old-price">
+                                            <p>117 ₽</p>
+                                            <p>в месяц</p>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="tariff-description__button button button_blue button-text button-text_small">Купить
+                                        хостинг</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tariff__description col-sm-6 col-lg-3 hide-w">
+                            <div class="tariff-description">
+                                <div class="tariff-description__top">
+                                    <p class="tariff-description__space main-text main-text_semibold">50Gb места SSDgit
+                                    </p>
+                                    <div class="tariff-description__text mini-text">
+                                        <p>PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4</p>
+                                        <p>Поддержка любой CMS</p>
+                                        <p>Бесплатные SSL сертификаты Let's Encrypt</p>
+                                        <p>Защита от DDoS</p>
+                                        <p>Повышенная производительность</p>
+                                        <p>Домен в подарок</p>
+                                    </div>
+                                </div>
+                                <div class="tariff-description__bottom">
+                                    <div class="tariff-description__price">
+                                        <div class="tariff-description__new-price">
+                                            <div></div>
+                                            <p class="header-3">470 ₽</p>
+                                            <p>в месяц</p>
+                                        </div>
+                                        <div class="tariff-description__old-price">
+                                            <p>117 ₽</p>
+                                            <p>в месяц</p>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="tariff-description__button button button_blue button-text button-text_small">Купить
+                                        хостинг</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="tariff__characteristics show-m">
+                        <li class="tariff__card">
+                            <div class="tariff__block">
+                                <div class="tariff-block">
+                                    <div class="tariff-block__image">
+                                        <img src="./img/tariff/baloon.svg" alt="воздушный шар">
+                                    </div>
+                                    <div class="tariff-block__name header-3">мини</div>
+                                </div>
+                            </div>
+                            <div class="tariff__wrapper">
+                                <div class="tariff__infinity main-text">
+                                    Неограниченно сайтов, баз данных MySQL, FTP аккаунтов и почтовых ящиков
+                                </div>
+                                <div class="tariff__description">
+                                    <div class="tariff-description">
+                                        <div class="tariff-description__top">
+                                            <p class="tariff-description__space main-text main-text_semibold">2Gb места
+                                                SSD
+                                            </p>
+                                            <div class="tariff-description__text mini-text">
+                                                <p>PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4</p>
+                                                <p>Поддержка любой CMS</p>
+                                                <p>Бесплатные SSL сертификаты Let's Encrypt</p>
+                                                <p>Защита от DDoS</p>
+                                            </div>
+                                        </div>
+                                        <div class="tariff-description__bottom">
+                                            <div class="tariff-description__price">
+                                                <div class="tariff-description__new-price">
+                                                    <div></div>
+                                                    <p class="header-3">99 ₽</p>
+                                                    <p>в месяц</p>
+                                                </div>
+                                                <div class="tariff-description__old-price">
+                                                    <p>117 ₽</p>
+                                                    <p>в месяц</p>
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="tariff-description__button button button_blue button-text button-text_small">Купить
+                                                хостинг</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tariff__card">
+                            <div class="tariff__block">
+                                <div class="tariff-block">
+                                    <div class="tariff-block__image tariff-block__image_start">
+                                        <img src="./img/tariff/paper-airplane.svg" alt="бумажный самолётик">
+                                    </div>
+                                    <div class="tariff-block__name header-3">старт</div>
+                                </div>
+                            </div>
+                            <div class="tariff__wrapper">
+                                <div class="tariff__infinity main-text">
+                                    Неограниченно сайтов, баз данных MySQL, FTP аккаунтов и почтовых ящиков
+                                </div>
+                                <div class="tariff__description">
+                                    <div class="tariff-description">
+                                        <div class="tariff-description__top">
+                                            <p class="tariff-description__space main-text main-text_semibold">7Gb места
+                                                SSD </p>
+                                            <div class="tariff-description__text mini-text">
+                                                <p>PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4</p>
+                                                <p>Поддержка любой CMS</p>
+                                                <p>Бесплатные SSL сертификаты Let's Encrypt</p>
+                                                <p>Защита от DDoS</p>
+                                                <p>Повышенная производительность</p>
+                                                <p>Домен в подарок</p>
+                                            </div>
+                                        </div>
+                                        <div class="tariff-description__bottom">
+                                            <div class="tariff-description__price">
+                                                <div class="tariff-description__new-price">
+                                                    <div></div>
+                                                    <p class="header-3">149 ₽</p>
+                                                    <p>в месяц</p>
+                                                </div>
+                                                <div class="tariff-description__old-price">
+                                                    <p>117 ₽</p>
+                                                    <p>в месяц</p>
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="tariff-description__button button button_blue button-text button-text_small">Купить
+                                                хостинг</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tariff__card">
+                            <div class="tariff-block">
+                                <div class="tariff-block__image tariff-block__image_standart">
+                                    <img src="./img/tariff/helicopter.svg" alt="вертолет">
+                                </div>
+                                <div class="tariff-block__name header-3">стандарт</div>
+                            </div>
+                            <div class="tariff__wrapper">
+                                <div class="tariff__infinity main-text">
+                                    Неограниченно сайтов, баз данных MySQL, FTP аккаунтов и почтовых ящиков
+                                </div>
+                                <div class="tariff__description">
+                                    <div class="tariff-description">
+                                        <div class="tariff-description__top">
+                                            <p class="tariff-description__space main-text main-text_semibold">30Gb места
+                                                SSD
+                                            </p>
+                                            <div class="tariff-description__text mini-text">
+                                                <p>PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4</p>
+                                                <p>Поддержка любой CMS</p>
+                                                <p>Бесплатные SSL сертификаты Let's Encrypt</p>
+                                                <p>Защита от DDoS</p>
+                                                <p>Повышенная производительность</p>
+                                                <p>Домен в подарок</p>
+                                            </div>
+                                        </div>
+                                        <div class="tariff-description__bottom">
+                                            <div class="tariff-description__price">
+                                                <div class="tariff-description__new-price">
+                                                    <div></div>
+                                                    <p class="header-3">290 ₽</p>
+                                                    <p>в месяц</p>
+                                                </div>
+                                                <div class="tariff-description__old-price">
+                                                    <p>117 ₽</p>
+                                                    <p>в месяц</p>
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="tariff-description__button button button_blue button-text button-text_small">Купить
+                                                хостинг</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tariff__card">
+                            <div class="tariff-block">
+                                <div class="tariff-block__image tariff-block__image_business">
+                                    <img src="./img/tariff/rocket.svg" alt="космическая ракета">
+                                </div>
+                                <div class="tariff-block__name header-3">бизнес</div>
+                            </div>
+                            <div class="tariff__wrapper">
+                                <div class="tariff__infinity main-text">
+                                    Неограниченно сайтов, баз данных MySQL, FTP аккаунтов и почтовых ящиков
+                                </div>
+                                <div class="tariff__description">
+                                    <div class="tariff-description">
+                                        <div class="tariff-description__top">
+                                            <p class="tariff-description__space main-text main-text_semibold">50Gb места
+                                                SSDgit
+                                            </p>
+                                            <div class="tariff-description__text mini-text">
+                                                <p>PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4</p>
+                                                <p>Поддержка любой CMS</p>
+                                                <p>Бесплатные SSL сертификаты Let's Encrypt</p>
+                                                <p>Защита от DDoS</p>
+                                                <p>Повышенная производительность</p>
+                                                <p>Домен в подарок</p>
+                                            </div>
+                                        </div>
+                                        <div class="tariff-description__bottom">
+                                            <div class="tariff-description__price">
+                                                <div class="tariff-description__new-price">
+                                                    <div></div>
+                                                    <p class="header-3">470 ₽</p>
+                                                    <p>в месяц</p>
+                                                </div>
+                                                <div class="tariff-description__old-price">
+                                                    <p>117 ₽</p>
+                                                    <p>в месяц</p>
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="tariff-description__button button button_blue button-text button-text_small">Купить
+                                                хостинг</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tariff__all-characteristics link">
+                        <a href="#">Посмотреть все характеристики нашего хостинга</a>
+                    </div>
+                    <div class="tariff__additions tarift-additions row">
+                        <div class="tariff-additions__image col-12 col-md-6">
+                            <img src="./img/tariff/additions.png" alt="ноутбук, сервер и возможности">
+                        </div>
+                        <div class="tariff-additions__info col-12 col-md-6">
+                            <h4 class="tariff-additions__title header-4">Вместе с хостингом Вы получите</h4>
+                            <ul class="tariff-additions__items">
+                                <li class="tariff-additions__item round-list"><span></span>30 дней на тестовый период +
+                                    100%
+                                    возврат денег, если
+                                    хостинг не подойдёт</li>
+                                <li class="tariff-additions__item round-list"><span></span>Хостинг в подарок при оплате
+                                    тарифа на 1
+                                    год</li>
+                                <li class="tariff-additions__item round-list"><span></span>Бесплатный перенос сайта от
+                                    другого
+                                    хостинг-провайдера</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cms">
+                <div class="cms__container container">
+                    <h2 class="cms__title header-2">Хостинг с поддержкой любой CMS</h2>
+                    <div class="cms__about main-text">
+                        <p>На нашем виртуальном хостинге вы сможете разместить сайт на <span
+                                class="main-text_semibold">любой CMS,</span> а также установить в два клика любую
+                            популярную систему управлению сайтом</p>
+                    </div>
+                    <ul class="cms__items">
+                        <li class="cms__item">
+                            <img src="./img/cms/1c-bitrix.png" alt="1С-Битрикс CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/wordpress.png" alt="Wordpress CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/joomla.png" alt="Joomla CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/modx.png" alt="Modx CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/opencart.png" alt="Opencart CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/umi.png" alt="Umi CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/drupal.png" alt="Drupal CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/instant.png" alt="Instant CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/netcat.png" alt="Netcat CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/phpBB.png" alt="phpBB CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/shop-script.png" alt="Shop-Script CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/data-life-engine.png" alt="DataLife Engine CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/host.png" alt="Host CMS">
+                        </li>
+                        <li class="cms__item">
+                            <img src="./img/cms/presta-shop.png" alt="Presta Shop CMS">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="sll" id="sll">
+                <div class="sll__container container">
+                    <h2 class="sll__title header-2">SSL-сертификаты</h2>
+                    <div class="sll__about main-text">
+                        <p>Купить SSL и попасть в TOP Google. WSHOST предлагает низкие цены и быстрый выпуск за счет
+                            <span class="main-text_semibold">уникальных</span> партнерских условий с удостоверяющими
+                            центрами.
+                        </p>
+                        <p>Подберите сертификат исходя из задач и предпочтений, удобные фильтры и описание помогут
+                            определиться </p>
+                    </div>
+                    <ol class="sll__cards row">
+                        <li class="sll__card col-12 col-sm-6 col-lg-3">
+                            <div class="sll-card">
+                                <div class="sll-card__header">
+                                    SSL для сайта Comodo PositiveSSL
+                                </div>
+                                <div class="sll-card__text mini-text">
+                                    <p>Доступен физическим лицам</p>
+                                    <p>Защита 1го домена
+                                    </p>
+                                    <p>Поддержка IDN доменов
+                                    </p>
+                                    <p>Низкая степень доверия
+                                    </p>
+                                    <p>Совместимость с браузерами: 96%</p>
+                                    <p>Автоустановка на наш хостинг</p>
+                                </div>
+                                <div class="sll-card__price">
+                                    <span>900 ₽</span>/ год
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sll__card col-12 col-sm-6 col-lg-3">
+                            <div class="sll-card">
+                                <div class="sll-card__header">
+                                    SSL для магазина Positive SSL MDC (3 domains)
+                                </div>
+                                <div class="sll-card__text mini-text">
+                                    <p>Доступен физическим лицам</p>
+                                    <p>Защита 3х доменов</p>
+                                    <p>Опция добавления доменов
+                                    </p>
+                                    <p>Поддержка IDN доменов
+                                    </p>
+                                    <p>Достаточная степень доверия
+                                    </p>
+                                    <p>Совместимость с браузерами: 99.8%</p>
+                                    <p>Автоустановка на наш хостинг</p>
+                                </div>
+                                <div class="sll-card__price">
+                                    <span>3800 ₽</span>/ год
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sll__card col-12 col-sm-6 col-lg-3">
+                            <div class="sll-card">
+                                <div class="sll-card__header">
+                                    С защитой поддоменов Essential SSL Wildcard
+                                </div>
+                                <div class="sll-card__text mini-text">
+                                    <p>Доступен физическим лицам</p>
+                                    <p>Защита всех поддоменов</p>
+                                    <p>Поддержка IDN доменов
+                                    </p>
+                                    <p>Достаточная степень доверия
+                                    </p>
+                                    <p>Совместимость с браузерами: 99.8%</p>
+                                    <p>Автоустановка на наш хостинг</p>
+                                </div>
+                                <div class="sll-card__price">
+                                    <span>6700 ₽</span>/ год
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sll__card col-12 col-sm-6 col-lg-3">
+                            <div class="sll-card">
+                                <div class="sll-card__header">
+                                    С зеленой строкой True BusinessID with EV
+                                </div>
+                                <div class="sll-card__text mini-text">
+                                    <p>Только для юридических лиц
+                                    </p>
+                                    <p>Защита одного домена
+                                    </p>
+                                    <p>Зеленая адресная строка
+                                    </p>
+                                    <p>Наивысшая степень доверия
+                                    </p>
+                                    <p>Без поддержки IDN</p>
+                                    <p>Совместимость с браузерами: 99.9%</p>
+                                    <p>Автоустановка на наш хостинг</p>
+                                </div>
+                                <div class="sll-card__price">
+                                    <span>12600 ₽</span>/ год
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                    <div class="sll__button">
+                        <button class="button button-text button-text_small">Заказать SSL сертификат</button>
+                    </div>
+                </div>
+            </section>
+            <div class="names-hosting">
+                <section class="names" id="names">
+                    <div class="names__container container">
+                        <h2 class="sll__title header-2">Доменные имена</h2>
+                        <div class="names__wrapper row">
+                            <div class="names__content  col-12 col-lg-6">
+                                <div class="names__text main-text">
+                                    <p>Правильное название сайта — залог трафика и успешной рекламы. Домен должен
+                                        ассоциироваться у пользователя с конкретными услугами или отраслью. </p>
+                                    <p>Часто говорят: «Посмотри на auto.ru» и становится понятно, что речь про ресурс,
+                                        который связан с автомобилями. Точно так же и с другими сайтами, в имени
+                                        которых заложен смысл их деятельности.</p>
+                                    <p>Помимо основных, выделяют специальные - тематические зоны: .travel, .site, .pro и
+                                        т.д.</p>
+                                </div>
+                                <div class="names__button">
+                                    <button class="button button-text button-text_small">Подобрать и зарегистрировать
+                                        домен</button>
+                                </div>
+                            </div>
+                            <div class="names__blocks col-12 col-lg-6">
+                                <ul class="names__block">
+                                    <li class="names__item names-item">
+                                        <div class="names-item__domen">
+                                            .ru
+                                        </div>
+                                        <div class="names-item__price">
+                                            <div class="names-item__value">600 ₽ </div>
+                                            <div class="names-item__year">в год</div>
+                                        </div>
+                                    </li>
+                                    <li class="names__item names-item">
+                                        <div class="names-item__domen">
+                                            .su
+                                        </div>
+                                        <div class="names-item__price">
+                                            <div class="names-item__value">900 ₽ </div>
+                                            <div class="names-item__year">в год</div>
+                                        </div>
+                                    </li>
+                                    <li class="names__item names-item">
+                                        <div class="names-item__domen">
+                                            .net
+                                        </div>
+                                        <div class="names-item__price">
+                                            <div class="names-item__value">1200 ₽ </div>
+                                            <div class="names-item__year">в год</div>
+                                        </div>
+                                    </li>
+                                    <li class="names__item names-item">
+                                        <div class="names-item__domen">
+                                            .biz
+                                        </div>
+                                        <div class="names-item__price">
+                                            <div class="names-item__value">1200 ₽ </div>
+                                            <div class="names-item__year">в год</div>
+                                        </div>
+                                    </li>
+                                    <li class="names__item names-item">
+                                        <div class="names-item__domen">
+                                            .moscow
+                                        </div>
+                                        <div class="names-item__price">
+                                            <div class="names-item__value">500 ₽ </div>
+                                            <div class="names-item__year">в год</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="names__block names__block_right">
+                                    <li class="names__item names-item">
+                                        <div class="names-item__domen">
+                                            .рф
+                                        </div>
+                                        <div class="names-item__price">
+                                            <div class="names-item__value">600 ₽ </div>
+                                            <div class="names-item__year">в год</div>
+                                        </div>
+                                    </li>
+                                    <li class="names__item names-item">
+                                        <div class="names-item__domen">
+                                            .com
+                                        </div>
+                                        <div class="names-item__price">
+                                            <div class="names-item__value">1200 ₽ </div>
+                                            <div class="names-item__year">в год</div>
+                                        </div>
+                                    </li>
+                                    <li class="names__item names-item">
+                                        <div class="names-item__domen">
+                                            .org
+                                        </div>
+                                        <div class="names-item__price">
+                                            <div class="names-item__value">1200 ₽ </div>
+                                            <div class="names-item__year">в год</div>
+                                        </div>
+                                    </li>
+                                    <li class="names__item names-item">
+                                        <div class="names-item__domen">
+                                            .info
+                                        </div>
+                                        <div class="names-item__price">
+                                            <div class="names-item__value">1200 ₽ </div>
+                                            <div class="names-item__year">в год</div>
+                                        </div>
+                                    </li>
+                                    <li class="names__item names-item">
+                                        <div class="names-item__domen">
+                                            .msc.ru
+                                        </div>
+                                        <div class="names-item__price">
+                                            <div class="names-item__value">500 ₽ </div>
+                                            <div class="names-item__year">в год</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="hosting" id="hosting">
+                    <div class="hosting__container container">
+                        <h2 class="sll__title header-2">Хостинг VPS/VDS серверов
+                        </h2>
+                        <div class="hosting__wrapper row">
+                            <div class="col-12 col-md-5">
+                                <div class="hosting__image image-bg">
+                                    <img src="./img/vps/connecting.png" alt="подключение к серверу">
+                                </div>
+                            </div>
+
+                            <div class="hosting__content main-text col-12 col-md-7">
+                                <p>Готовые тарифы VPS сбалансированы по производительности. Индивидуальная конфигурация
+                                    позволит получить оптимальное количество ресурсов с оплатой за час. </p>
+                                <p>Все тарифы VPS хостинга построены на оборудовании Xeon Scalable Silver/Gold. </p>
+                                <p>Серверы размещены в DDoS-защищенном кластере ЦОД Tier lll и подключены к точке обмена
+                                    трафиком Cloud-IX.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="vps">
+                <div class="vps__container container">
+                    <div class="vps__wrapper row">
+                        <div class="vps__price col-12 col-lg-4 col-xl-5">
+                            <h4 class="vps__title header-4">Цены на VPS KVM</h4>
+                            <p class="vps__subtitle">На каждом VPS сервере для вас уже включено:</p>
+                            <ul class="vps__items">
+                                <li class="vps__item round-list"><span></span>Root-доступ
+                                </li>
+                                <li class="vps__item round-list"><span></span>Защиты от DDoS
+                                </li>
+                                <li class="vps__item round-list"><span></span>Домен в подарок при оплате за 1 год
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="vps__table col-12 col-lg-8 col-xl-7">
+                            <table class="vps-table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Start VPS</th>
+                                        <th>Optima VPS</th>
+                                        <th>Drive VPS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>CPU</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RAM</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HDD</td>
+                                        <td>20 GB</td>
+                                        <td>40 GB</td>
+                                        <td>60 GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>₽ в месяц</td>
+                                        <td>350 <button
+                                                class="button button_blue button-text button-text_small">Заказать
+                                                VPS</button> </td>
+                                        <td>450 <button
+                                                class="button button_blue button-text button-text_small">Заказать
+                                                VPS</button></td>
+                                        <td>950 <button
+                                                class="button button_blue button-text button-text_small">Заказать
+                                                VPS</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="advantages__container container">
+                    <h2 class="advantages__title header-2">Выгоды нашего хостинга для Вас</h2>
+                    <ul class="advantages__items">
+                        <li class="advantages__item">
+                            <div class="advantages__image">
+                                <img src="./img/advantages/arrow-down.svg" alt="стрелочка вниз с долларом">
+                            </div>
+                            <div class="advantages__title main-text main-text_semibold">Низкие цены</div>
+                            <div class="advantages__text mini-text">Доступные цены всегда были приоритетом нашей
+                                компании.
+                                Партнерская программа поможет сэкономить ещё больше.</div>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__image">
+                                <img src="./img/advantages/briefcase.svg" alt="портфель с шестиренкой">
+                            </div>
+                            <div class="advantages__title main-text main-text_semibold">Грамотная поддержка</div>
+                            <div class="advantages__text mini-text">Сотрудники с многолетним опытом в сфере хостинг
+                                услуг всегда
+                                оперативно помогут решить возникшие у клиентов трудности.</div>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__image">
+                                <img src="./img/advantages/lock.svg" alt="замок">
+                            </div>
+                            <div class="advantages__title main-text main-text_semibold">Безопасность</div>
+                            <div class="advantages__text mini-text">Фильтрация паразитического трафика, защита от
+                                брут-форс атак
+                                помогут обеспечить сохранность данных клиентов.</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="feedback__container container">
+                    <div class="feedback__wrapper row">
+                        <div class="feedback__info col-12 col-md-4 col-lg-6">
+                            <h4 class="vps__title header-4">Отзывы о нашем хостинге</h4>
+                            <div class="feedback__text main-text">
+                                <p>Хостинг – наша работа! Более 10 лет мы размещаем сайты своих клиентов на надёжном и
+                                    современном оборудовании. </p>
+                                <p>Почитайте, что говорят наши клиенты</p>
+                            </div>
+                        </div>
+                        <div class="feedback__feedback feedback-slider col-12 col-md-8 col-lg-6">
+                            <div class="feedback__item feedback-feedback">
+                                <p class="feedback-feedback__text main-text">«Пользуюсь хостингом уже около 8 лет.
+                                    Хорошая цена и
+                                    удобно что CPanel для управления. Поддержка помогает хорошо.»
+                                </p>
+                                <p class="feedback-feedback__author mini-text">Петровна Мария Ивановна</p>
+                                <div class="feedback-feedback__image image-bg">
+                                    <img src="./img/feedback/feedback-1.jpg" alt="фото пользователя">
+                                </div>
+                            </div>
+                            <div class=" feedback__item feedback-feedback">
+                                <p class="feedback-feedback__text main-text">«Пользуюсь хостингом уже около 8 лет.
+                                    Хорошая цена и
+                                    удобно что CPanel для управления. Поддержка помогает хорошо.»
+                                </p>
+                                <p class="feedback-feedback__author mini-text">Петровна Мария Ивановна</p>
+                                <div class="feedback-feedback__image image-bg">
+                                    <img src="./img/feedback/feedback-1.jpg" alt="фото пользователя">
+                                </div>
+                            </div>
+                            <div class="feedback__item feedback-feedback">
+                                <p class="feedback-feedback__text main-text">«Пользуюсь хостингом уже около 8 лет.
+                                    Хорошая цена и
+                                    удобно что CPanel для управления. Поддержка помогает хорошо.»
+                                </p>
+                                <p class="feedback-feedback__author mini-text">Петровна Мария Ивановна</p>
+                                <div class="feedback-feedback__image image-bg">
+                                    <img src="./img/feedback/feedback-1.jpg" alt="фото пользователя">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="fqa">
+                <div class="fqa__container container">
+                    <h2 class="fqa__title header-2">Вопросы и ответы</h2>
+                    <div class="fqa__text main-text">Здесь представлены самые популярные вопросы, которые задают нам
+                        клиенты перед
+                        оформлением заказа на виртуальный хостинг. Если вы не нашли ответ на имеющиеся у вас вопрос,
+                        задайте его нашим специалистам.</div>
+                    <div class="fqa__wrapper">
+                        <div class="accordion">
+                            <ul class="accordion__block">
+                                <li class="accordion__item">
+                                    <div class="accordion__header main-text main-text_semibold">Что такое
+                                        SSL-сертификат?
+                                    </div>
+                                    <div class="accordion__content mini-text">Это криптографический протокол для
+                                        организации
+                                        защищенного соединения с вашим сайтом. Такие протоколы необходимы всем сайтам,
+                                        на
+                                        которых происходит сбор любых данных и сведений, есть формы обратной связи или
+                                        другие формы для заполнения, сайтам с высоким уровнем доверия (банки, новостные
+                                        ресурсы, интернет-магазины, форумы и т.д.). При отсутствии HTTPS-соединения,
+                                        любой
+                                        браузер перед переадресацией на сайт известит пользователя, о том, что
+                                        соединение не
+                                        безопасно. Это значительно снижает конверсию сайта и приводит к потере
+                                        посетителей
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__header main-text main-text_semibold">Немного о нас и наших
+                                        услугах
+                                    </div>
+                                    <div class="accordion__content mini-text">Это криптографический протокол для
+                                        организации
+                                        защищенного соединения с вашим сайтом. Такие протоколы необходимы всем сайтам,
+                                        на
+                                        которых происходит сбор любых данных и сведений, есть формы обратной связи или
+                                        другие формы для заполнения, сайтам с высоким уровнем доверия (банки, новостные
+                                        ресурсы, интернет-магазины, форумы и т.д.). При отсутствии HTTPS-соединения,
+                                        любой
+                                        браузер перед переадресацией на сайт известит пользователя, о том, что
+                                        соединение не
+                                        безопасно. Это значительно снижает конверсию сайта и приводит к потере
+                                        посетителей
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="accordion__block accordion__block_right">
+                                <li class="accordion__item">
+                                    <div class="accordion__header main-text main-text_semibold">Как выбрать
+                                        SSL-сертификат?
+
+                                    </div>
+                                    <div class="accordion__content mini-text">Это криптографический протокол для
+                                        организации
+                                        защищенного соединения с вашим сайтом. Такие протоколы необходимы всем сайтам,
+                                        на
+                                        которых происходит сбор любых данных и сведений, есть формы обратной связи или
+                                        другие формы для заполнения, сайтам с высоким уровнем доверия (банки, новостные
+                                        ресурсы, интернет-магазины, форумы и т.д.). При отсутствии HTTPS-соединения,
+                                        любой
+                                        браузер перед переадресацией на сайт известит пользователя, о том, что
+                                        соединение не
+                                        безопасно. Это значительно снижает конверсию сайта и приводит к потере
+                                        посетителей
+                                    </div>
+                                </li>
+
+                                <li class="accordion__item">
+                                    <div class="accordion__header main-text main-text_semibold">Есть ли бесплатные
+                                        SSL-сертификаты?
+                                    </div>
+                                    <div class="accordion__content mini-text">Это криптографический протокол для
+                                        организации
+                                        защищенного соединения с вашим сайтом. Такие протоколы необходимы всем сайтам,
+                                        на
+                                        которых происходит сбор любых данных и сведений, есть формы обратной связи или
+                                        другие формы для заполнения, сайтам с высоким уровнем доверия (банки, новостные
+                                        ресурсы, интернет-магазины, форумы и т.д.). При отсутствии HTTPS-соединения,
+                                        любой
+                                        браузер перед переадресацией на сайт известит пользователя, о том, что
+                                        соединение не
+                                        безопасно. Это значительно снижает конверсию сайта и приводит к потере
+                                        посетителей
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__header main-text main-text_semibold">Как правильно выбрать
+                                        тариф?
+
+                                    </div>
+                                    <div class="accordion__content mini-text">Это криптографический протокол для
+                                        организации
+                                        защищенного соединения с вашим сайтом. Такие протоколы необходимы всем сайтам,
+                                        на
+                                        которых происходит сбор любых данных и сведений, есть формы обратной связи или
+                                        другие формы для заполнения, сайтам с высоким уровнем доверия (банки, новостные
+                                        ресурсы, интернет-магазины, форумы и т.д.). При отсутствии HTTPS-соединения,
+                                        любой
+                                        браузер перед переадресацией на сайт известит пользователя, о том, что
+                                        соединение не
+                                        безопасно. Это значительно снижает конверсию сайта и приводит к потере
+                                        посетителей
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="try">
+                <div class="try__container container">
+                    <div class="try__block">
+                        <div class="try__text">
+                            <p class="header-4">Получите <span>30 дней</span> на тестирование нашего хостинга
+                                <span>бесплатно</span>
+                            </p>
+                            <p class="header-4"> Плюс, <span>100% гарантия возврата</span> всех оплаченных денежных
+                                средств в этот
+                                период.</p>
+                        </div>
+                        <div class="try__button">
+                            <button class="button button-text button-text_small">Попробовать
+                                хостинг</button>
+                        </div>
+                    </div>
+                    <div class="try__arrow-left">
+                        <img src="./img/try/arrow-left.svg" alt="стралочка к блоку">
+                    </div>
+                    <div class="try__arrow-right">
+                        <img src="./img/try/arrow-right.svg" alt="стралочка к блоку">
+                    </div>
+                </div>
+            </div>
+            <section class="payment">
+                <div class="payment__container container">
+                    <h2 class="payment__title header-2">Способы оплаты</h2>
+                    <div class="payment__text main-text">Оплачивайте услуги виртуального хостинга WSHOST любым, удобным
+                        для
+                        вас методом. Наш хостинг также могут заказать и оплатить юридические лица безналичным переводом
+                    </div>
+                    <ul class="payment__items">
+                        <li class="payment__item">
+                            <img src="./img/payment/web-money.png" alt="webmoney">
+                        </li>
+                        <li class="payment__item">
+                            <img src="./img/payment/u-money.png" alt="Ю money">
+                        </li>
+                        <li class="payment__item">
+                            <img src="./img/payment/visa.png" alt="visa">
+                        </li>
+                        <li class="payment__item">
+                            <img src="./img/payment/mastercard.png" alt="mastercard">
+                        </li>
+                        <li class="payment__item">
+                            <img src="./img/payment/mir.png" alt="мир">
+                        </li>
+                        <li class="payment__item">
+                            <img src="./img/payment/qiwi.png" alt="qiwi">
+                        </li>
+                        <li class="payment__item">
+                            <img src="./img/payment/paypal.png" alt="paypal">
+                        </li>
+                        <li class="payment__item">
+                            <img src="./img/payment/sber.png" alt="sber">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__wrapper">
+                    <div class="footer__info">
+                        <div class="footer__logo">
+                            <a href="#">
+                                <img src="./img/header/logo.svg" alt="логотип">
+                            </a>
+                        </div>
+                        <div class="footer__text mini-text">
+                            WSHOST даёт возможность купить хостинг сайтов дешево с SSL и полноценным пакетом услуг.
+                            Дешевая регистрация доменов и недорогой хостинг позволяют создать сайт любой тематики. Мы
+                            занимаем лидирующие позиции в даной сфере. Нашими клиентами являются жители городов Москва,
+                            Санкт-Петербург и т.д. Выбирая наш php хостинг вы получаете премиум услуги по низкой цене.
+                        </div>
+                    </div>
+                    <ul class="footer__contacts">
+                        <li class="footer__contact contact">
+                            <div class="contact__icon">
+                                <img src="./img/footer/phone.svg" alt="телефон">
+                            </div>
+                            <div class="contact__contact">
+                                <div class="contact__text mini-text">Телефон в Москве:</div>
+                                <a href="tel:+7(495)123-45-56">+7 (495) 123-45-56</a>
+                            </div>
+                        </li>
+                        <li class="footer__contact contact">
+                            <div class="contact__icon contact__icon_email">
+                                <img src="./img/footer/mail.svg" alt="электронная почта">
+                            </div>
+                            <div class="contact__contact">
+                                <div class="contact__text mini-text">Электронная почта</div>
+                                <a href="mailto:support@wshost.ru">support@wshost.ru</a>
+                            </div>
+                        </li>
+                        <li class="footer__contact contact">
+                            <div class="contact__icon contact__icon_email">
+                                <img src="./img/footer/location.svg" alt="локация">
+                            </div>
+                            <div class="contact__contact">
+                                <div class="contact__text mini-text">Адрес дата-ценра и офиса продаж</div>
+                                <a href="#">г. Москва, Варшавское шоссе, д. 125
+                                </a>
+                                <div class="contact__descr mini-text">Tехническая поддержка работает 24/7</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="footer__social">
+                        <ul class="footer__items">
+                            <li class="footer__item">
+                                <a href="#">
+                                    <img src="./img/footer/twitter.svg" alt="твиттер">
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">
+                                    <img src="./img/footer/instagram.svg" alt="инстаграм">
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">
+                                    <img src="./img/footer/vk.svg" alt="вконтакте">
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">
+                                    <img src="./img/footer/facebook.svg" alt="фейсбук">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer__button">
+                            <button class="button button_blue">Report
+                                Spam</button>
+                        </div>
+                    </div>
+                    <div class="footer__menu">
+                        <div class="footer__menu-block footer-menu">
+                            <p class="footer-menu__title main-text main-text_semibold">О компании
+                            </p>
+                            <ul class="footer-menu__items">
+                                <li class="footer-menu__item">
+                                    <a href="#">О хостинг-провайдере</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#"> Партнёрская программа</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Дата-центр</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Документы для клиентов</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Договор на услуги хостинга</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Способы оплаты</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Цены</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Акции</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Новости</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Вакансии</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu-block footer-menu">
+                            <p class="footer-menu__title main-text main-text_semibold">Наши услуги
+                            </p>
+                            <ul class="footer-menu__items">
+                                <li class="footer-menu__item">
+                                    <a href="#">Виртуальный хостинг</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Хостинг для 1С-Битрикс</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Хостинг для Wordpress</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Аренда VPS</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Регистрация доменов</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">SSL сертификаты</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Конструктор сайтов</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/bundle.js"></script>
+</body>
+
+</html>
