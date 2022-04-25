@@ -1,5 +1,5 @@
 .feedback {
-    padding: 103px 0 80px;
+    padding: 103px 0 0px;
     &__wrapper {
         align-items: center;
         @media (min-width: 992px) {
@@ -28,9 +28,17 @@
             margin-top: 33px;
         }
     }
+    &__item {
+        margin-top: 45px;
+        margin-bottom: 45px;
+        @media (min-width: 992px) {
+            margin-top: 33px;
+        }
+    }
 }
 
 .feedback-feedback {
+    
     padding: 40px 20px 82px;
     position: relative;
     width: 100%;
@@ -41,6 +49,7 @@
     @media (min-width: 576px) {
         padding: 50px 45px 64px;
     }
+    
     &::before {
         content: "";
         position: absolute;

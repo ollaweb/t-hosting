@@ -16,7 +16,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header-overlay"></div>
             <div class="header__block">
                 <div class="header__container container">
@@ -83,9 +83,18 @@
                     </ul>
                 </div>
             </nav>
+            <div class="header__burger burger">
+                <div class="burger__wrapper">
+                    <div class="burger__items">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
         </header>
         <main class="main">
-            <section class="promo">
+            <section class="promo" id="promo">
                 <div class="promo__container container">
                     <div class="promo__image">
                         <img src="./img/promo/seververs.svg" alt="серверы">
@@ -990,8 +999,28 @@
                                 <p>Почитайте, что говорят наши клиенты</p>
                             </div>
                         </div>
-                        <div class="feedback__feedback col-12 col-md-8 col-lg-6">
-                            <div class="feedback-feedback">
+                        <div class="feedback__feedback feedback-slider col-12 col-md-8 col-lg-6">
+                            <div class="feedback__item feedback-feedback">
+                                <p class="feedback-feedback__text main-text">«Пользуюсь хостингом уже около 8 лет.
+                                    Хорошая цена и
+                                    удобно что CPanel для управления. Поддержка помогает хорошо.»
+                                </p>
+                                <p class="feedback-feedback__author mini-text">Петровна Мария Ивановна</p>
+                                <div class="feedback-feedback__image image-bg">
+                                    <img src="./img/feedback/feedback-1.jpg" alt="фото пользователя">
+                                </div>
+                            </div>
+                            <div class=" feedback__item feedback-feedback">
+                                <p class="feedback-feedback__text main-text">«Пользуюсь хостингом уже около 8 лет.
+                                    Хорошая цена и
+                                    удобно что CPanel для управления. Поддержка помогает хорошо.»
+                                </p>
+                                <p class="feedback-feedback__author mini-text">Петровна Мария Ивановна</p>
+                                <div class="feedback-feedback__image image-bg">
+                                    <img src="./img/feedback/feedback-1.jpg" alt="фото пользователя">
+                                </div>
+                            </div>
+                            <div class="feedback__item feedback-feedback">
                                 <p class="feedback-feedback__text main-text">«Пользуюсь хостингом уже около 8 лет.
                                     Хорошая цена и
                                     удобно что CPanel для управления. Поддержка помогает хорошо.»
@@ -1180,7 +1209,9 @@
                 <div class="footer__wrapper">
                     <div class="footer__info">
                         <div class="footer__logo">
-                            <img src="./img/header/logo.svg" alt="логотип">
+                            <a href="#">
+                                <img src="./img/header/logo.svg" alt="логотип">
+                            </a>
                         </div>
                         <div class="footer__text mini-text">
                             WSHOST даёт возможность купить хостинг сайтов дешево с SSL и полноценным пакетом услуг.
@@ -1223,16 +1254,24 @@
                     <div class="footer__social">
                         <ul class="footer__items">
                             <li class="footer__item">
-                                <img src="./img/footer/twitter.svg" alt="твиттер">
+                                <a href="#">
+                                    <img src="./img/footer/twitter.svg" alt="твиттер">
+                                </a>
                             </li>
                             <li class="footer__item">
-                                <img src="./img/footer/instagram.svg" alt="инстаграм">
+                                <a href="#">
+                                    <img src="./img/footer/instagram.svg" alt="инстаграм">
+                                </a>
                             </li>
                             <li class="footer__item">
-                                <img src="./img/footer/vk.svg" alt="вконтакте">
+                                <a href="#">
+                                    <img src="./img/footer/vk.svg" alt="вконтакте">
+                                </a>
                             </li>
                             <li class="footer__item">
-                                <img src="./img/footer/facebook.svg" alt="фейсбук">
+                                <a href="#">
+                                    <img src="./img/footer/facebook.svg" alt="фейсбук">
+                                </a>
                             </li>
                         </ul>
                         <div class="footer__button">
@@ -1245,26 +1284,38 @@
                             <p class="footer-menu__title main-text main-text_semibold">О компании
                             </p>
                             <ul class="footer-menu__items">
-                                <li class="footer-menu__item">О хостинг-провайдере</li>
-                                <li class="footer-menu__item">Партнёрская программа
+                                <li class="footer-menu__item">
+                                    <a href="#">О хостинг-провайдере</a>
                                 </li>
-                                <li class="footer-menu__item">Дата-центр
+                                <li class="footer-menu__item">
+                                    <a href="#"> Партнёрская программа</a>
                                 </li>
-                                <li class="footer-menu__item">Документы для клиентов
+                                <li class="footer-menu__item">
+                                    <a href="#">Дата-центр</a>
                                 </li>
-                                <li class="footer-menu__item">Договор на услуги хостинга
+                                <li class="footer-menu__item">
+                                    <a href="#">Документы для клиентов</a>
                                 </li>
-                                <li class="footer-menu__item">Способы оплаты
+                                <li class="footer-menu__item">
+                                    <a href="#">Договор на услуги хостинга</a>
                                 </li>
-                                <li class="footer-menu__item">Цены
+                                <li class="footer-menu__item">
+                                    <a href="#">Способы оплаты</a>
                                 </li>
-                                <li class="footer-menu__item">Акции
+                                <li class="footer-menu__item">
+                                    <a href="#">Цены</a>
                                 </li>
-                                <li class="footer-menu__item">Новости
+                                <li class="footer-menu__item">
+                                    <a href="#">Акции</a>
                                 </li>
-                                <li class="footer-menu__item">Вакансии
+                                <li class="footer-menu__item">
+                                    <a href="#">Новости</a>
                                 </li>
-                                <li class="footer-menu__item">Контакты
+                                <li class="footer-menu__item">
+                                    <a href="#">Вакансии</a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="#">Контакты</a>
                                 </li>
                             </ul>
                         </div>
@@ -1272,19 +1323,26 @@
                             <p class="footer-menu__title main-text main-text_semibold">Наши услуги
                             </p>
                             <ul class="footer-menu__items">
-                                <li class="footer-menu__item">Виртуальный хостинг
+                                <li class="footer-menu__item">
+                                    <a href="#">Виртуальный хостинг</a>
                                 </li>
-                                <li class="footer-menu__item">Хостинг для 1С-Битрикс
+                                <li class="footer-menu__item">
+                                    <a href="#">Хостинг для 1С-Битрикс</a>
                                 </li>
-                                <li class="footer-menu__item">Хостинг для Wordpress
+                                <li class="footer-menu__item">
+                                    <a href="#">Хостинг для Wordpress</a>
                                 </li>
-                                <li class="footer-menu__item">Аренда VPS
+                                <li class="footer-menu__item">
+                                    <a href="#">Аренда VPS</a>
                                 </li>
-                                <li class="footer-menu__item">Регистрация доменов
+                                <li class="footer-menu__item">
+                                    <a href="#">Регистрация доменов</a>
                                 </li>
-                                <li class="footer-menu__item">SSL сертификаты
+                                <li class="footer-menu__item">
+                                    <a href="#">SSL сертификаты</a>
                                 </li>
-                                <li class="footer-menu__item">Конструктор сайтов
+                                <li class="footer-menu__item">
+                                    <a href="#">Конструктор сайтов</a>
                                 </li>
                             </ul>
                         </div>

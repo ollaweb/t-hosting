@@ -1,6 +1,9 @@
 .promo {
-    padding: 54px 0 64px;
+    padding: 126px 0 64px;
     background: linear-gradient(91.05deg, #5994BA 14.15%, #ADCCE0 99%);
+    @media (min-width: 768px) {
+        padding: 54px 0 64px;
+    }
     &__container {
         position: relative;
     }

@@ -1,47 +1,45 @@
 .header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
     display: block;
     background-color: $text;
-    // height: 50px;
+    // position: relative;
+    transition: opacity 0.3s ease-out;
     @media (min-width: 768px) {
+        position: static;
         display: block;
-        // height: auto;
     }
-    // &__block {
-    //     position: fixed;
-    //     top: 0;
-    //     right: 0;
-    //     width: 70%;
-    //     z-index: 10;
-    //     background-color: $text;
-    //     transition: all .6s ease-out;
-    //     @media (min-width: 768px) {
-    //         position: static;
-    //         height: auto;
-    //         width: auto;
-    //     }
-    // }
     &__wrapper {
         padding: 11px 0 12px;
         align-items: center;
+    }
+    &__block {
+        &.active {
+            & .header__mobile {
+                right: 0;
+            }
+        }
     }
     &__mobile {
         padding: 10px;
         padding-top: 85px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -100%;
         width: 80%;
         z-index: 10;
         background-color: $text;
-        transition: all .6s ease-out;
+        transition: right .6s ease-out;
         @media (min-width: 576px) {
             flex-direction: row;
         }
         @media (min-width: 768px) {
+            justify-content: space-between;
             padding: 0 10px 0 10px;
             position: static;
             height: auto;
@@ -49,8 +47,8 @@
     }
     &__logo {
         & img {
-            width: 100px;
-            height: 62px;
+            width: 79px;
+                height: 49px;
             @media (min-width: 768px) {
                 margin-left: 10px;
                 width: 143px;
@@ -80,6 +78,7 @@
         height: 34px;
         border-radius: 100%;
         background-color: $blue;
+        transition: all 0.3s ease;
         @media (min-width: 768px) {
             width: 44px;
             height: 44px;
@@ -89,6 +88,9 @@
             @media (min-width: 768px) {
                 transform: none;
             }
+        }
+        &:hover {
+            background-color: $orange;
         }
     }
     &__buttons {
@@ -107,13 +109,8 @@
     }
     &__button {
         margin-right: 10px;
-        // margin-top: 10px;
         padding: 7px 12px;
         font-size: 16px;
-        @media (min-width: 576px) {
-            // margin-top: 0;
-            
-        }
         @media (min-width: 768px) {
             margin: 0;
             padding: 7px 30px;
@@ -129,20 +126,25 @@
         background-color:$white;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -100%;
         width: 80%;
         height: 100vh;
         z-index: 10;
-        transition: all .6s ease-out;
+        overflow: scroll;
+        transition: right .6s ease-out;
         @media (min-width: 576px) {
             margin-top: 179px;
         }
         @media (min-width: 768px) {
+            overflow: auto;
             margin: 0;
             padding: 16px 0px 18px;
             position: static;
             width: auto;
             height: auto;
+        }
+        &.active {
+            right: 0;
         }
     }
     &__menu {
@@ -183,7 +185,23 @@
     &__link {
         padding: 5px;
         @media (min-width: 768px) {
+            position: relative;
             padding: 0;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                height: 1px;
+                width: 0;
+                background-color: $gray;
+                transition: all 0.4s ease-out;
+            }
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -209,7 +227,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 20;
+    z-index: 6;
     background-color: rgba(8,6,6,.5);
     transition: all 2s ease-out;
     &.active {

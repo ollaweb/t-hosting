@@ -91,6 +91,8 @@
     background: $white;
     box-shadow: 0px 4px 4px rgba(183, 183, 183, 0.43);
     border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.15s ease-out;
     @media (min-width: 500px) {
         flex-direction: row;
     }
@@ -102,6 +104,9 @@
     }
     @media (min-width: 1200px) {
         padding: 18px 19px 16px 39px;
+    }
+    &:hover {
+        background: #eef4f7;
     }
     &__domen {
         margin-top: 10px;
