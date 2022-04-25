@@ -4,7 +4,6 @@
     z-index: 100;
     display: block;
     background-color: $text;
-    // position: relative;
     transition: opacity 0.3s ease-out;
     @media (min-width: 768px) {
         position: static;
@@ -136,7 +135,7 @@
             margin-top: 179px;
         }
         @media (min-width: 768px) {
-            overflow: auto;
+            overflow: unset;
             margin: 0;
             padding: 16px 0px 18px;
             position: static;
@@ -206,18 +205,103 @@
     }
 }
 
+#dropdown {
+    position: relative;
+    @media (min-width: 992px) {
+        padding-right: 10px;
+    }
+    @media (min-width: 1200px) {
+        padding-right: 24px;
+    }
+}
+
 .dropdown {
-    display: flex;
-    align-items: center;
-    & img {
-        margin-left: 4px;
-        width: 16px;
-        height: 16px;
-        @media (min-width: 992px) {
-            width: 20px;
-            height: 20px;
+        position: relative;
+        cursor: pointer;
+        &::before,
+        &::after {
+            content:"";
+            position: absolute;
+            top: 10px;
+            right: -16px;
+            // clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+            width: 8px;
+            height: 2px;
+            transform: rotate(45deg);
+            background-color: $text;
+            @media (min-width: 992px) {
+                top: 15px;
+            }
+            @media (min-width: 1200px) {
+                width: 10px;
+            }
+        }  
+        &::before {
+            right: -21px;
+            transform: rotate(-45deg);
+            // clip-path: polygon(0 0, 92% 0, 100% 100%, 0 100%);
+            @media (min-width: 1200px) {
+                right: -22px;
+            }
+        }
+        &__button {
+            font-size: inherit;
+            font-weight: inherit;
+            text-transform: uppercase;
+            background: transparent;
+        }
+        &__wrapper {
+            display: none;
+            margin: 0 -15px;
+            padding: 5px 5px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.4s ease;
+            & >:not(:last-child) {
+                margin-bottom: 10px;
+            }
+            &.active {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                inset: 0px auto auto 0px;
+                position: absolute;
+                top: 30px;
+                left: 0;
+                width: 100%;
+                min-width: 220px;
+                visibility: visible;
+                opacity: 1;
+                z-index: 102;
+                background-color: $white;
+                @media (min-width: 768px) {
+                    display: block;
+                }
+                @media (min-width: 992px) {
+                    min-width: 260px;
+                }
+            }
+        }
+        &__item {
+            text-transform: lowercase;
+            & a {
+                padding: 5px 10px;
+            }
+            &:hover {
+                background-color: rgba(103,168,210,0.5);
+            }
+        }
+    &.active {
+        &::before,
+        &::after {
+            transform: rotate(-45deg);
+        }  
+        &::before {
+            transform: rotate(45deg);
         }
     }
+    
+
 }
 
 .header-overlay {

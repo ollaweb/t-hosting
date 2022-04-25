@@ -5,6 +5,7 @@ export default function useBurger() {
     const headerNav = document.querySelector(".header__nav");
     const headerOverlay = document.querySelector(".header-overlay");
     const headerItemLinks = document.querySelectorAll(".header__link a");
+    const dropdownLink = document.querySelector(".dropdown")
 
     function openBurgerMenu() {
         burger.classList.add("active");
