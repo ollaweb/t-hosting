@@ -2,6 +2,5 @@ import burger from "./modules/burger";
 
 window.addEventListener("DOMContentLoaded", () => {
     "use strict";
-    console.log("hello")
     burger();
 });

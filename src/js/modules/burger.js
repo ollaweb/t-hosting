@@ -1,20 +1,22 @@
 export default function useBurger() {
     const body = document.body;
     const burger = document.querySelector(".burger");
-    const burgerStrips = document.querySelector(".burger__items");
-    const menu = document.querySelector(".menu");
+    const headerBlock = document.querySelector(".header__block");
+    const headerNav = document.querySelector(".header__nav");
     const headerOverlay = document.querySelector(".header-overlay");
-    const menuItemLinks = document.querySelectorAll(".menu__item a");
+    const headerItemLinks = document.querySelectorAll(".header__link a");
 
     function openBurgerMenu() {
-        burgerStrips.classList.add("active");
-        menu.classList.add("active");
+        burger.classList.add("active");
+        headerBlock.classList.add("active");
+        headerNav.classList.add("active");
         body.classList.add("locked");
         headerOverlay.classList.add("active");
     }
     function closeBurgerMenu() {
-        burgerStrips.classList.remove("active");
-        menu.classList.remove("active");
+        burger.classList.remove("active");
+        headerBlock.classList.remove("active");
+        headerNav.classList.remove("active");
         body.classList.remove("locked");
         headerOverlay.classList.remove("active");
     }
@@ -27,9 +29,9 @@ export default function useBurger() {
         });
     }
     function closeByClickOnMenuItem() {
-        menu.addEventListener("click", (event) => {
+        headerNav.addEventListener("click", (event) => {
             event.stopPropagation();
-            menuItemLinks.forEach(item => {
+            headerItemLinks.forEach(item => {
                 if ((event.target === item)) {
                     closeBurgerMenu();
                 }
